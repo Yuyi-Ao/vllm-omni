@@ -40,6 +40,7 @@ recipes/
 | [`cosmos3/Cosmos3-Super.md`](./cosmos3/Cosmos3-Super.md) | 64B T2I / T2V / I2V generation (+ optional audio) / Action policy | 8x H200/H100/A100 / 2x H200 / B300 |
 | [`OpenBMB/MiniCPM-o-4_5.md`](./OpenBMB/MiniCPM-o-4_5.md) | Online serving for omni multimodal chat (text / image / audio / video → text + 24 kHz speech) | 2x A100/H100 80GB / 3x mid-tier GPU / 8x RTX 4090 24GB |
 | [`OpenBMB/VoxCPM2.md`](./OpenBMB/VoxCPM2.md) | Online + offline TTS with native AR pipeline (48 kHz, 30+ languages) | 1x RTX 4090 24GB |
+| [`OmniGen2/OmniGen2.md`](./OmniGen2/OmniGen2.md) | Text-to-image serving | 1x L40S 48GB |
 | [`Qwen/Qwen-Image.md`](./Qwen/Qwen-Image.md) | Text-to-image serving with step-wise continuous batching replay and ModelOpt mixed FP8/NVFP4 | 1x A100 80GB / 2x B200 |
 | [`Qwen/Qwen-Image.md`](./Qwen/Qwen-Image.md) | Text-to-image serving with step-wise continuous batching replay | 1x A100 80GB |
 | [`Qwen/Qwen-Image-Edit.md`](./Qwen/Qwen-Image-Edit.md) | Text-guided single-image editing | 1x or 2x H200 141GB |
@@ -52,7 +53,6 @@ recipes/
 | [`Wan-AI/Wan2.2-S2V.md`](./Wan-AI/Wan2.2-S2V.md) | Speech-to-video serving (Wan2.2 14B) | 2x A100/H100 80GB |
 | [`zai-org/GLM-TTS.md`](./zai-org/GLM-TTS.md) | Online serving for Chinese/English zero-shot voice-cloned TTS | 1x A40 48GB |
 | [`GLM/GLM-Image.md`](./GLM/GLM-Image.md) | Online serving for image generation | 1x A800 80GB / 2x A800 80GB |
-|
 
 Within a single recipe file, include different hardware support sections such
 as `GPU`, `ROCm`, and `NPU`, and add concrete tested configurations like
