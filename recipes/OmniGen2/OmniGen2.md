@@ -19,7 +19,6 @@ single NVIDIA L40S 48GB GPU.
   [`docs/user_guide/examples/online_serving/text_to_image.md`](../../docs/user_guide/examples/online_serving/text_to_image.md)
 - Related example under `examples/`:
   [`examples/online_serving/text_to_image/README.md`](../../examples/online_serving/text_to_image/README.md)
-- Related issue:
 
 ## Hardware Support
 
@@ -93,9 +92,3 @@ Decoded output: 1024x1024 RGB PNG.
 - Memory usage: observed peak memory was 19854 MiB for a 1024x1024 smoke test.
   `nvidia-smi` showed 20407 MiB used after the online server was initialized
   and idle.
-- Key flags:
-  - `--omni` enables vLLM-Omni diffusion serving.
-  - `--init-timeout 2400` and `--stage-init-timeout 2400` allow the first
-    launch to finish model loading and warmup on this host.
-- Known limitations:
-  - OmniGen2 supports a single prompt per request in the current pipeline.
